@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  catdb:
+    image: postgres:11.4
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data/cat:/var/lib/postgresql/data
+      - ./sql/cat:/docker-entrypoint-initdb.d
+  dogdb:
+    image: postgres:11.4
+    ports:
+      - 5435:5432
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - ./data/dog:/var/lib/postgresql/data
+      - ./sql/dog:/docker-entrypoint-initdb.d

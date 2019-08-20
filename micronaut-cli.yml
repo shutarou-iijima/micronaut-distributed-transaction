@@ -1,0 +1,5 @@
+profile: cli
+defaultPackage: sample.cli.app
+---
+testFramework: spek
+sourceLanguage: kotlin
