@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: sample-cli-app
+
+datasources:
+  cat:
+    url: jdbc:postgresql://localhost:5434/postgres
+    username: postgres
+    password: password
+    driverClassName: org.postgresql.Driver
+  dog:
+    url: jdbc:postgresql://localhost:5435/postgres
+    username: postgres
+    password: password
+    driverClassName: org.postgresql.Driver
