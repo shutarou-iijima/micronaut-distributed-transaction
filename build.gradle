@@ -47,6 +47,9 @@ dependencies {
     compile "io.micronaut.configuration:micronaut-jdbc-hikari"
     implementation "org.springframework:spring-jdbc"
     runtimeOnly "org.postgresql:postgresql:42.2.6"
+
+// https://mvnrepository.com/artifact/javax/javaee-api
+    compile group: 'javax', name: 'javaee-api', version: '7.0'
 }
 
 test.classpath += configurations.developmentOnly
